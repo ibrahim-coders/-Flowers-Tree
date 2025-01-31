@@ -1,3 +1,6 @@
+import cover from '@/public/cover/cover.jpg';
+import cover2 from '@/public/cover/cover-2.jpg';
+import cover3 from '@/public/cover/cover-3.jpg';
 const data = {
   headerMenus: [
     {
@@ -33,5 +36,30 @@ const data = {
       href: '/page/help',
     },
   ],
+
+  carousels: [
+    {
+      title: 'Fresh Flowers & Lush Green Trees',
+      buttonCaption: 'Shop Now',
+      image: cover,
+      url: '/search?category=Shoes',
+      isPublished: true,
+    },
+    {
+      title: "Nature's Beauty: Trees & Floral Wonders",
+      buttonCaption: 'Shop Now',
+      image: cover2,
+      url: '/search?category=T-Shirts',
+      isPublished: true,
+    },
+    {
+      title: 'Vibrant Blossoms & Evergreen Paradise',
+      buttonCaption: 'See More',
+      image: cover3,
+      url: '/search?category=Wrist Watches',
+      isPublished: true,
+    },
+  ],
 };
+
 export default data;

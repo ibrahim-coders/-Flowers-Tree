@@ -1,4 +1,5 @@
 import { APP_NAME } from '@/lib/constants';
+import logo from '@/public/logo/logo.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import Menu from './menu';
@@ -6,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { MenuIcon } from 'lucide-react';
 import data from '@/lib/data';
 import Search from './search';
+
 export default function Header() {
   return (
     <header className="bg-black  text-white">
@@ -14,13 +16,12 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="flex items-center header-button font-extrabold text-2xl m-1 "
+              className="flex items-center header-button font-extrabold text-xl m-1 "
             >
               <Image
-                src="/icons/logo.svg"
-                width={40}
-                height={40}
+                src={logo}
                 alt={`${APP_NAME} logo`}
+                className=" w-10 h-10 rounded-full mr-2"
               />
               {APP_NAME}
             </Link>
